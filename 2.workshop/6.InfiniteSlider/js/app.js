@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function(){
+
     var ul = $(".slider ul");
     var firestUlChild = ul.children().first();
     var lastUlChild = ul.children().last();
@@ -23,13 +24,20 @@ $(document).ready(function(){
         currentImage++;
         console.log("I want to start animate " + currentImage);
         ul.animate({
-            "left" :  -currentImage * imageWidth + "px"
+            "left" :  -currentImage * imageWidth + "px",
+            complete:  function () {
+              console.log("I ended animation " + currentImage);
+              if(currentImage >= pictures.length -1){
+                  currentImage = 1;
+                  ul.css("left", -currentImage * imageWidth + "px");
+              }
+             }
         }, 1000, function(){
-            console.log("I ended animation " + currentImage);
-            if(currentImage >= pictures.length -1){
-                currentImage = 1;
-                ul.css("left", -currentImage * imageWidth + "px");
-            }
+            // console.log("I ended animation " + currentImage);
+            // if(currentImage >= pictures.length -1){
+            //     currentImage = 1;
+            //     ul.css("left", -currentImage * imageWidth + "px");
+            // }
         });
     });
 

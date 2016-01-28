@@ -13,6 +13,8 @@ Plik css masz już przygotowany, przyjrzyj się mu rownież dokładnie.
 ## Punkt 2
 Przygotuj do pracy plik JavaScript. Dopisz event odpowiedzialny za sprawdzenie czy DOM został załadowany (pamiętaj, że zadanie maswz rozwiązać używając jQuery) i sprawdź czy działa (np poprzez wyświetlenie w konsoli napisu "Działa").
 
+Stwórz funkcję, która będzie odpowiedzialna za animowanie progressBarami. Pamiętaj o odpowiednich komentarzach i odpowiedniej nazwie dla funkcji.
+
 Następnie znajdź następujące elementy i zapisz je do zmiennych:
 
 1. Wszystkie przyciski,

@@ -18,9 +18,9 @@ Czy widzisz nadmiarowość w swoim kodzie?
 Za pomocą jQuery:
 
 * Spróbuj wyszukać wszystkie linki i ustawić im czerwony kolor za pomocą funkcji ```css()```.
-* Zmodyfikuj kod html i jQuery, aby kolor czerwony miały linki tylko z menu.
-* Dodaj klasę ```.redLinks``` w pliku styli (ustaw w niej kolor tekstu na czerwony ) i za pomocą ```addClass``` nadaj ją elementom ```li``` w menu (Zmodyfikuj punkt a))
-* Dodaj do pierwszego elementu w menu, klasę, która sprawi, że czcionka dla tego elementu będzie większa niż reszta linków. Stwórz odpowiednią klasę w pliku style.css.
+* Zmodyfikuj kod tak, aby kolor czerwony miały linki tylko z menu.
+* Dodaj klasę ```.redLinks``` w pliku styli (ustaw w niej kolor tekstu na czerwony ) i za pomocą ```addClass``` nadaj ją elementom ```li``` w menu (Zmodyfikuj kod z punktu a i b))
+* Spraw, aby pierwszy element menu miał większą czcionkę niz inne.  Stwórz odpowiednią klasę w pliku style.css.
 
 Pamiętaj, aby wykonać to w odpowiedniej funkcji.
 

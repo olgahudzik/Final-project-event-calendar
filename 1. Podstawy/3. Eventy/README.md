@@ -1,12 +1,13 @@
 # jQuery - Eventy
 
 ## Zadanie 1
-Znajdź w pliku index.html 3 buttony. Stwórz funkcję, w której wykonaj następujące czynności:
+Znajdź w pliku index.html 3 buttony w elemencie o klasie ```hero-buttons```. Stwórz funkcję, w której wykonaj następujące czynności:
 * ustaw każdy z 3 button-ów pod inną zmienną,
 * dla elementu pierwszego ustaw event click, który po kliknięciu wyświetli w consoli napis (kliknięto mnie),
 * dla elementu drugiego ustaw event click, który po kliknięciu wyświetli w consoli napis (kliknięto mnie, ale już się drugi raz nie dam kliknąć),
 * dla trzeciego wywołaj metodę off, która odczepi wszystkie eventy z poprzednich butonów.
 
+Przetestuj działanie Twojej funkcji.
 
 ## Zadanie 2
 Znajdź w pliku index.html sekcję z klasą ```superhero-description```, a nastepnie napisz funkcję, w której:

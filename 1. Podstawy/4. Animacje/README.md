@@ -1,7 +1,7 @@
 # jQuery - Animacje
 
 ## Zadanie 1
-Znajdź w pliku index.html element o klasie ```butons```, stwórz odpowiednią funkcję, a  następnie wykonaj czynności:
+Znajdź w pliku index.html element o klasie ```buttons```, stwórz odpowiednią funkcję, a  następnie wykonaj czynności:
 * po kliknięciu w pierwszy buton – pokaż element content,
 * po kliknięciu w drugi element – ukryj element content,
 * po kliknięciu w trzeci element raz pokaż, a raz ukryj element content

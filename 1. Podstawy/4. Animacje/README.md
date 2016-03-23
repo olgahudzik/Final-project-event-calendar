@@ -7,7 +7,7 @@ Ustaw event click na elementach ```button```. Niech po kliknięciu w każdy z ni
 na klikniętym elemencie. Użyj funkcji ```text()```.
 
 ## Zadanie testowe 2
-Po kliknięciu w element o klasie ```content```, ustaw animację "przygaszania" (czyli zmień opacity na 0.5) z czasem zanikania 2 sekundy.
+Po kliknięciu w element o klasie ```content```, ustaw animację "przygaszania" (czyli zmień ```opacity``` na 0.5) z czasem zanikania 2 sekundy.
 Po zakończeniu "przygaszania", wróć do normalnej widoczności elementu z czasem 700ms.
 
 -----------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ Po zakończeniu "przygaszania", wróć do normalnej widoczności elementu z czas
 
 ## Zadanie 1
 Znajdź w pliku index.html element o klasie ```buttons```, stwórz odpowiednią funkcję i wykonaj w niej następujące czynności:
-* po kliknięciu w pierwszy button – pokaż element o klasie ```content```,
+* po kliknięciu w pierwszy buton – pokaż element o klasie ```content```,
 * po kliknięciu w drugi element – ukryj element o klasie ```content```,
 * po kliknięciu w trzeci element raz pokaż, a raz ukryj element o klasie ```content```.
 

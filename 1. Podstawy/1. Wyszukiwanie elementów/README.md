@@ -32,7 +32,7 @@ Za pomocą jQuery:
 * Spróbuj wyszukać wszystkie linki i ustawić im czerwony kolor za pomocą funkcji ```css()```.
 * Zmodyfikuj kod tak, aby kolor czerwony miały linki tylko z menu.
 * Dodaj klasę ```.redLinks``` w pliku style.css (ustaw w niej kolor tekstu na czerwony ) i za pomocą ```addClass``` nadaj ją elementom ```li``` w menu (Zmodyfikuj kod z podpunktu 1 i 2))
-* Spraw, aby pierwszy element menu miał większą czcionkę niz inne.  Stwórz odpowiednią klasę w pliku style.css.
+* Spraw, aby pierwszy element menu miał większą czcionkę niż inne.  Stwórz odpowiednią klasę w pliku style.css.
 
 Pamiętaj, aby wykonać to w odpowiedniej funkcji.
 

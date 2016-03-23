@@ -1,25 +1,25 @@
 # jQuery - Ćwiczenia - Forms
 
-Zadanie będzie polagało na stworzeniu skryptu walidującego pola formularza oraz przesłanie danych pod adres [http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl](http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl)
+Zadanie będzie polegało na stworzeniu skryptu walidującego pola formularza oraz przesłanie danych pod adres [http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl](http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl)
 
 ## Punkt 1
 Zapoznaj się dokładnie z kodem HTML  dodanym do zadania.
-Dopisz adres pod który chcemy wysłać formularzz do elementu form w odpowiedni atrybut.
+Dopisz adres, pod który chcemy wysłać formularz, do elementu ```form``` w odpowiedni atrybut.
 
 ## Punkt 2
-Przygotuj do pracy plik JavaScript. Dopisz event odpowiedzialny za sprawdzenie czy DOM został załadowany (pamiętaj, że zadanie maswz rozwiązać używając jQuery) i sprawdź czy działa (np poprzez wyświetlenie w konsoli napisu "Działa").
+Przygotuj do pracy plik JavaScript. Dopisz event odpowiedzialny za sprawdzenie czy DOM został załadowany (pamiętaj, że zadanie masz rozwiązać używając jQuery) i sprawdź czy działa (np. poprzez wyświetlenie w konsoli napisu "Działa").
 
 Stwórz funkcję, która będzie odpowiedzialna za obsługę formularza. Pamiętaj o odpowiednich komentarzach i odpowiedniej nazwie dla funkcji.
 
 Następnie znajdź następujące elementy i zapisz je do zmiennych:
 
-1. Formularz.
-2. Każde pole formularza (do oddzielnej zmiennej).
-3. Element div, w którym będziemy pokazywać błędy, jeśli użytkownik wpisze coś nie tak.
+1. formularz,
+2. każde pole formularza (do oddzielnej zmiennej),
+3. element div, w którym będziemy pokazywać błędy, jeśli użytkownik wpisze coś nie tak.
 
-Sprawdż czy wyszukałeś odpowiednie elementy i czy ich ilość się zgadza.
+Sprawdź czy wyszukałeś odpowiednie elementy i czy ich ilość się zgadza.
 
-Wypisz zmienne w konsoli, żeby upewnić się czy zawierają poprawne dane.
+Wypisz zmienne w konsoli,  aby upewnić się, że zawierają poprawne dane.
 
 ## Punkt 3
 Dodaj do formularza event submit, który zareaguje na kliknięcie. Przekaż do funkcji callback złapany event. Zablokuj domyślne zachowanie eventu submit (pamiętasz funkcję ```event.preventDefault()``` ?)

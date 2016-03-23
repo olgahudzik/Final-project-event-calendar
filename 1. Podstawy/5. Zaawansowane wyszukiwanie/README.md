@@ -1,4 +1,4 @@
-# jQuery - Zaawansoane wyszukiwanie
+# jQuery - Zaawansowane wyszukiwanie
 
 ## Zadanie 1
 Znajdź w pliku index.html element o klasie ```shopping```, stwórz odpowiednią funkcję, a  następnie wykonaj czynności:

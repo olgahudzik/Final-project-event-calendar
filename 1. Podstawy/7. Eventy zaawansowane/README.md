@@ -1,4 +1,4 @@
-# jQuery - Eventy zaawansowane
+# jQuery – Zaawansowane eventy
 
 ## Zadanie 1
 Znajdź w pliku index.html element o klasie ```people```, stwórz odpowiednią funkcję, a  następnie wykonaj w niej czynności:

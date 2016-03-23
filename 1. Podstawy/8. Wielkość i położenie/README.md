@@ -1,4 +1,4 @@
-# jQuery - Eventy zaawansowane
+# jQuery – Wielkość i położenie
 
 ## Zadanie 1
 Znajdź w pliku index.html element o klasie ```box```, stwórz odpowiednią funkcję, a  następnie wykonaj w niej czynności:
@@ -9,6 +9,6 @@ Znajdź w pliku index.html element o klasie ```box```, stwórz odpowiednią funk
 Znajdź w pliku index.html element o klasie ```menu```. Stwórz odpowiednią funkcję. a następnie wykonaj w niej czynności:
 * ustaw event ```click``` na elemencie ```a```,
 * pobierz do zmiennej wartość atrybutu ```href```,
-* za pomocą animate stwórz efekt łagodnego scrollowania całej strony, do miejsca o id pobranym z atrybutu ```href```.
+* za pomocą animate stwórz efekt łagodnego skrolowania całej strony, do miejsca o id pobranym z atrybutu ```href```.
 Czyli jeśli ktoś kliknie w link Blog - strona przesuwa się do paragrafu o id ```blog```.
 Wskazówka: skorzystaj z pomocy StackOverflow :)

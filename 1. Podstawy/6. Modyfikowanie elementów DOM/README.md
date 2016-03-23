@@ -1,4 +1,4 @@
-# jQuery - Zaawansoane wyszukiwanie
+# jQuery – Modyfikowanie elementów
 
 ##Te zadania wykonaj razem z wykładowcą.
 

@@ -16,4 +16,4 @@ Połącz wszystko w jeden łańcuch (chain).
 Popraw swoje zadanie 2 z poprzedniego rozdziału, tak aby jQuery tylko raz przeszukiwało dokument. Następnie połącz całe zapytanie w jeden łańcuch (jeśli to możliwe i jeśli jeszcze tego nie zrobiłeś).
 
 ## Zadanie 2
-Wypisz w konsoli pierwszy, trzeci i ostani element menu. Użyj odpowiednich funkcji. Dodaj do znalezionych elementów klasę ```menuLinks```.
+Wypisz w konsoli pierwszy, trzeci i ostatni element menu. Użyj odpowiednich funkcji. Dodaj do znalezionych elementów klasę ```menuLinks```.

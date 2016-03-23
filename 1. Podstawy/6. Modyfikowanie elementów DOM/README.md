@@ -1,12 +1,13 @@
 # jQuery - Zaawansoane wyszukiwanie
 
-##Te zadania wykonaj razem z wykadowcą.
+##Te zadania wykonaj razem z wykładowcą.
 
 ## Zadanie testowe 1
 Stwórz element ```div``` o klasie ```panel``` i wstaw go za sekcją ```people```. Dodaj mu za pomocą jQuery jakiś tekst.
 
-
 -----------------------------------------------------------------------------------------------------
+
+
 
 ##Te zadania spróbuj wykonać sam.
 

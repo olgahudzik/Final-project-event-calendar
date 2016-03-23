@@ -1,12 +1,13 @@
 # jQuery - Cachowanie elementów i chaining
 
-##Te zadania wykonaj razem z wykadowcą.
+##Te zadania wykonaj razem z wykładowcą.
 
 ## Zadanie testowe 1
 Znajdź element ```nav ``` i zapisz do zmiennej. Następnie za pomocą funkcji ```css()``` dodaj do niego obramowanie. Ustaw również funkcję ```fadeOut``` z bardzo wolnym zanikaniem oraz funkcję ```slideDown()```.
 Połącz wszystko w jeden łańcuch (chain).
 
 -----------------------------------------------------------------------------------------------------
+
 
 
 ##Te zadania spróbuj wykonać sam.

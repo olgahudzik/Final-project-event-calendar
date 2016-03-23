@@ -1,6 +1,6 @@
 # jQuery - Wyszukiwanie elementów
 
-##Te zadania wykonaj razem z wykadowcą.
+##Te zadania wykonaj razem z wykładowcą.
 
 ## Zadanie testowe 1
 Dołącz do swojego pliku bibliotekę jQuery. W pliku app.js umieść kod sprawdzający czy DOM został załadowany.
@@ -10,6 +10,7 @@ Następnie wyszukaj element ```section``` i ustaw im klasę ```backgroundElement
 Wyszukaj element ```nav```  wewnątrz sekcji ```links```. Dodaj mu klasę  ```hover-effect```.
 
 -----------------------------------------------------------------------------------------------------
+
 
 
 ##Te zadania spróbuj wykonać sam.

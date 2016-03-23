@@ -1,12 +1,13 @@
 # jQuery - Eventy
 
-##Te zadania wykonaj razem z wykadowcą.
+##Te zadania wykonaj razem z wykładowcą.
 
 ## Zadanie testowe 1
 Ustaw odpowiedni event na elemencie ```dt```, którego zadaniem będzie wyświetlanie w konsoli informacji na jaki element najechaliśmy.
 Przetestuj różnicę pomiędzy ```mouseenter```, ```mouseover``` i ```mousemove```.
 
 -----------------------------------------------------------------------------------------------------
+
 
 
 ##Te zadania spróbuj wykonać sam.

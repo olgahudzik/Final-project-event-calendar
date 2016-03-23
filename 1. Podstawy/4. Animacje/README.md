@@ -1,6 +1,6 @@
 # jQuery - Animacje
 
-##Te zadania wykonaj razem z wykadowcą.
+##Te zadania wykonaj razem z wykładowcą.
 
 ## Zadanie testowe 1
 Ustaw event click na elementach ```button```. Niech po kliknięciu w każdy z nich w konsoli wypisze się tekst znajdujący się
@@ -11,6 +11,8 @@ Po kliknięciu w element o klasie ```content```, ustaw animację "przygaszania" 
 Po zakończeniu "przygaszania", wróć do normalnej widoczności elementu z czasem 700ms.
 
 -----------------------------------------------------------------------------------------------------
+
+
 
 ##Te zadania spróbuj wykonać sam.
 

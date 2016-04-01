@@ -40,6 +40,3 @@ Pamiętaj, aby wykonać to w odpowiedniej funkcji.
 Sprawdź czy nagłówek ```H1``` ma klasę ```creepyHeader``` jeśli nie, to dodaj ją do tego elementu. W przeciwnym przypadku wypisz w konsoli, że nagłówek ma już taką klasę.
 
 Pamiętaj, aby wykonać to w odpowiedniej funkcji.
-
-## Zadanie 5
-Za pomocą funckji ```each()```, znajdź wszystkie elementy ```a```, następnie ustaw ich atrybut href na adres www.coderslab.pl.

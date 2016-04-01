@@ -10,3 +10,6 @@ Znajdź w pliku index.html element o klasie ```films```, stwórz odpowiednią fu
 * po kliknięciu w przycisk rozwiń, rozwiń opis filmu,
 * po kliknięciu w przycisk zamknij, zwiń opis filmu (tylko ten, który chcemy zwinąć, nie wszystkie),
 * zmodyfikuj kod tak, aby po kliknięciu w zamknij, zwijały się wszystkie opisy.
+
+## Zadanie 3
+Za pomocą funckji ```each()```, znajdź wszystkie elementy ```a```, następnie ustaw ich atrybut href na adres www.coderslab.pl.

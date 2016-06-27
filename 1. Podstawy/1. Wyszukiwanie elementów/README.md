@@ -4,7 +4,7 @@
 
 ## Zadanie testowe 1
 Dołącz do swojego pliku bibliotekę jQuery. W pliku app.js umieść kod sprawdzający czy DOM został załadowany.
-Następnie wyszukaj element ```section``` i ustaw im klasę ```backgroundElement```. Pamiętaj, aby wykonać to w odpowiedniej funkcji.
+Następnie wyszukaj elementy ```section``` i ustaw im klasę ```backgroundElement```. Pamiętaj, aby wykonać to w odpowiedniej funkcji.
 
 ## Zadanie testowe 2
 Wyszukaj element ```nav```  wewnątrz sekcji ```links```. Dodaj mu klasę  ```hover-effect```.

@@ -17,7 +17,7 @@ Znajdź w pliku index.html 3 butony w elemencie o klasie ```hero-buttons```. Stw
 * ustaw każdy z 3 buton-ów pod inną zmienną,
 * dla elementu pierwszego ustaw event click, który po kliknięciu wyświetli w konsoli napis (kliknięto mnie),
 * dla elementu drugiego ustaw event click, który po kliknięciu wyświetli w konsoli napis (kliknięto mnie, ale już się drugi raz nie dam kliknąć),
-* dla trzeciego wywołaj metodę off, która odczepi wszystkie eventy z wszystkich butonów.
+* dla trzeciego wywołaj metodę, która odczepi wszystkie eventy z wszystkich butonów.
 
 Przetestuj działanie Twojej funkcji :)
 

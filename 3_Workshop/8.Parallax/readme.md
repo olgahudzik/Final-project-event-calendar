@@ -47,5 +47,5 @@ Wewnątrz funkcji dla eventu ```mousemove``` ustaw w pętli dla każdego kwadrat
 * analogicznie dla pozycji ```top```.
 
 
-## Punkt 10
+## Punkt 9
 Sprawdź, jak działa Twoja strona. Czy widzisz problemy? Napisz.

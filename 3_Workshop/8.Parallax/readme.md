@@ -36,7 +36,7 @@ W miejscu oczekiwania na wjechanie myszki (event ```mouseenter```) podstaw pod z
 Kolejny krok to uruchomienie elementów w zależności od ruchów myszy (kod wewnątrz funkcji dla eventu ```mousemove```). Ustaw dwie zmienne przechowujące pozycję X i Y myszki ```currentMousePositionX``` i ```currentMousePositionX```.
 
 ## Punkt 6
-Teraz musimy ustawić pozycję myszki. Na początek sprawdź, czy przypadkiem nie najeżdżamy na element. Wykorzystaj ```event.target``` i ```this```. Jeżeli najedziemy na kwadrat, to zwiększ aktualną pozycję myszy o wartość pobraną z CSS (dla odpowiednich wartości ```left``` i ```top``` &ndash; pobierz je po prostu z bieżącego elementu ```event.target```). Unikniemy w ten sposób "migotania kwadratów".
+Teraz musimy ustawić pozycję myszki. Na początek sprawdź, czy przypadkiem nie najeżdżamy na element. Wykorzystaj ```event.target``` i metodę jQuery ```is```. Jeżeli najedziemy na kwadrat, to zwiększ aktualną pozycję myszy o wartość pobraną z CSS (dla odpowiednich wartości ```left``` i ```top``` &ndash; pobierz je po prostu z bieżącego elementu ```event.target```). Unikniemy w ten sposób "migotania kwadratów".
 
 ## Punkt 7
 Stwórz następnie dwie zmienne określające przesunięcie np. ```mouseMoveX``` oraz ```mouseMoveY```. Podstaw pod zmienne różnice między aktualną pozycją myszki a tą, kiedy mysz wjechała na scenę.
@@ -46,8 +46,6 @@ Wewnątrz funkcji dla eventu ```mousemove``` ustaw w pętli dla każdego kwadrat
 * np. dla pozycji left będzie to: ```aktualna pozycja left + mouseMoveX * speed```,
 * analogicznie dla pozycji ```top```.
 
-## Punkt 9
-Ostatni krok w tym zadaniu to podstawienie pod poprzednią pozycję myszki ```oldMousePositionX``` i ```oldMousePositionY``` bieżącej pozycji myszki ```currentMousePositionX``` i ```currentMousePositionX```.
 
 ## Punkt 10
 Sprawdź, jak działa Twoja strona. Czy widzisz problemy? Napisz.

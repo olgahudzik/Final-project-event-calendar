@@ -1,7 +1,7 @@
 # jQuery &ndash; zadanie
 # Forms
 
-Stwórz skrypt walidujący pola formularza oraz przesyłający dane pod adres: [http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl](http://www.htmlcodetutorial.com/cgi-bin/mycgi.pl)
+Stwórz skrypt walidujący pola formularza oraz przesyłający dane pod adres: [http://api.coderslab.pl/showpost.php](http://api.coderslab.pl/showpost.php)
 
 ## Punkt 1
 Zapoznaj się dokładnie z kodem HTML dodanym do zadania.

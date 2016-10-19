@@ -14,7 +14,7 @@ $(function() {
 
         li.append(h3);
 
-        movieLists.append(li)
+        movieLists.append(li);
     });
   }
 
@@ -24,9 +24,9 @@ $(function() {
         $.ajax({
             	url: movieUrl
         }).done(function(response){
-     		    insertContent(response.results)
+     		    insertContent(response.results);
     	 }).fail(function(error) {
-           console.log(error)
+           console.log(error);
        })
   }
 

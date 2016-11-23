@@ -38,6 +38,8 @@ Za pomocą jQuery wykonaj następujące czynności:
 4. Spraw, aby pierwszy element menu miał większy font niż inne. Stwórz odpowiednią **klasę** w pliku **style.css**.
 Pamiętaj, aby wykonać to w odpowiedniej funkcji.
 
+Może Ci się przydać: https://api.jquery.com/first/
+
 ## Zadanie 4
 Sprawdź, czy **h1** ma **klasę** ```creepyHeader```.
 1. Jeśli nie ma &ndash; dodaj ją do tego elementu.

@@ -1,6 +1,10 @@
+* {
+  font-family:helvetica, arial, sans-serif;
+}
 .tabs ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
+    background-color: grey;
 }
 
 .tabs li {
@@ -13,4 +17,6 @@
 
 .tabs div {
     display: none;
+    padding: 10px;
+    background-color: grey;
 }

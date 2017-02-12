@@ -42,10 +42,32 @@ body {
 	border-top: 5px solid #f00;
 }
 
-.select-body {
-  display: none;
+.arrow-up {
+  position:absolute;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #f00;
 }
 
+.select-body {
+  display: none;
+  position:absolute;
+  z-index: 1;
+  width:112px;
+  list-style-type: none;
+}
+
+.select-body li {
+  width:100%;
+  padding:5px;
+  border:1px solid #000000;
+  background-color: #ffffff;
+}
 
 /*Do zadania 4*/
 .running-element div {

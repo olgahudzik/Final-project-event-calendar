@@ -77,3 +77,6 @@
 	transform: scale(0.9);
 	opacity: 0;
 }
+.redLinks {
+  color:red;
+}

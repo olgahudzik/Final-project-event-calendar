@@ -2,6 +2,12 @@ body {
   font-family: 'Poppins', sans-serif!important;
   color: #393f4f;
 }
+/*nav.bar {
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}*/
 .headline {
   font-size: 32px;
   font-weight:bold;
@@ -34,14 +40,15 @@ hr {
     padding: 0;
     background-color:#eeeeee;
 }
-.btn {
+.searchButton {
   background-color: #393f4f;
     color: #ffffff;
     border: 2px solid #393f4f;
     font-size:16px;
     padding:10px 20px;
+    border-radius: 0%;
 }
-.btn:hover {
+.searchButton:hover {
   background-color: #ffffff;
    color: #393f4f;
    border: 2px solid #393f4f;
@@ -78,6 +85,7 @@ section#calendar{
   margin:0 auto;
 }
 section#calendar > div{
+  position:relative;
   width:100px;
   height:100px;
   border: 1px solid #ffffff;
@@ -108,7 +116,8 @@ section#calendar > div{
   background-color:#65d665;
 }
 #event_1 {
-  width: 100%;
+  position: absolute;
+  width: 295%;
   z-index: 1;
   margin: 0 auto;
   text-align: center;
@@ -121,10 +130,20 @@ section#calendar > div{
     top: 0;
     z-index: 1;
     background:rgba(255,255,255,0.7);
-}
-.fullScreen .close {
     display: block;
     margin: auto;
+}
+
+button.close {
+  position:fixed;
+  right:0;
+  top:0;
+  margin:10px;
+  color: red;
+}
+
+.nonDisplay {
+  display: none!important;
 }
 
 .fullScreen img {
@@ -136,9 +155,44 @@ section#calendar > div{
 h1 {
   text-align:center;
 }
-newDiv {
-  width:200px;
-  height:200px;
-  color:red;
-  border:1px solid black;
+.newDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #393f4f;
+}
+.registerForm {
+  width:500px;
+  height: 500px;
+  border:1px solid #eeeeee;
+  background-color: #ffffff;
+  padding:30px;
+}
+.registerForm input {
+  margin:10px;
+  width: 200px;
+}
+.inputsGroup {
+  margin:0 auto;
+  padding: 50px 60px;
+}
+input[type="email"] {
+  margin-left: 50px;
+}
+input[type="submit"] {
+  margin-right: 0;
+  margin-left: 91px;
+  background-color: #393f4f;
+  color: #ffffff;
+  border: 2px solid #393f4f;
+  font-size:16px;
+  height:50px;
+}
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #393f4f;
+  border: 2px solid #393f4f;
+}
+.registerForm label {
+  font-size: 16px;
 }

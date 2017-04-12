@@ -5,7 +5,7 @@ $(function(){
   var prev = $('.left');
   var next = $('.right');
   var monthLabel = $('.month');
-  var allMonths = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
+  var allMonths = ["January", "February", "March", "April", "May", "June", "July", "September", "October", "November", "December"];
 
 console.log(prev,next,monthLabel, allMonths);
 
@@ -32,15 +32,11 @@ console.log(prev,next,monthLabel, allMonths);
     var April = $('#calendarApril');
     var May = $('#calendarMay');
     var June = $('#calendarJune');
-    var July = $('#calendarJuly');
-    var August = $('#calendarAugust');
-    var September = $('#calendarSeptember');
-    var October = $('#calendarOctober');
-    var November = $('#calendarNovember');
-    var December = $('#calendarDecember');
-    i = 3;
+    var i = 3;
     next.on('click', function(){
-      i++;
+
+        i++;
+         console.log(i);
       monthLabel.text(allMonths[i] + ' 2017');
 
       if (allMonths[i]=="May"){
@@ -52,30 +48,12 @@ console.log(prev,next,monthLabel, allMonths);
       } else if (allMonths[i]=="June") {
         June.removeClass("nonDisplay");
           May.addClass("nonDisplay");
-      } else if (allMonths[i]=="July") {
-        July.removeClass("nonDisplay");
-        June.addClass("nonDisplay");
-      } else if (allMonths[i]=="August") {
-        August.removeClass("nonDisplay");
-        July.addClass("nonDisplay");
-      } else if (allMonths[i]=="September") {
-        September.removeClass("nonDisplay");
-        August.addClass("nonDisplay");
-      } else if (allMonths[i]=="October") {
-        October.removeClass("nonDisplay");
-        September.addClass("nonDisplay");
-      } else if (allMonths[i]=="November") {
-        November.removeClass("nonDisplay");
-        October.addClass("nonDisplay");
-      } else if (allMonths[i]=="December") {
-        December.removeClass("nonDisplay");
-        November.addClass("nonDisplay");
       }
-
 
     });
     prev.on('click', function(){
       i--;
+        console.log(i);
       monthLabel.text(allMonths[i] + ' 2017');
 
       if (allMonths[i]=="May"){
@@ -91,34 +69,15 @@ console.log(prev,next,monthLabel, allMonths);
 
 //Wyszukiwanie eventow w gornej sekcji kalendarza
   var submitButton = $('.searchButton');
-
+  var inputDate = $('#date').val();
   var inputLocation = $('#location').val();
   var inputName = $('#name').val();
-  var inputDate = $('#date').val();
   var events = $('.event');
   var eventDate = $('div.event[data-date]');
 
-
   function search() {
-    var inputDate = $('#date').val();
-    var monthLabel = $('#month_header');
-    var allMonths = [April, May, June, July, August, September, October, November, December];
-    var date1 = $('[data-date="'+ inputDate + '"]');
-    var dateResult = $('<section class="searchResult">'+ '[data-date="'+ inputDate + '"]' +'</section>');
-    // var datesearchResult = $()
-
-
     if ($('[data-date="'+ inputDate + '"]')) {
-
-      monthLabel.addClass("nonDisplay");
-      jQuery.each( allMonths, function( i, val ) {
-          allMonths[i].addClass("nonDisplay");
-      });
-
-      $('nav').append(date1);
-      date1.removeClass('EU').removeClass('event').removeAttr('id'); //trzeba pousuwac jeszcze inne klasy np. US
-      date1.addClass(searchResult);
-
+      console.log($(this));
     } else {
       console.log("nie wyszukalo");
     }

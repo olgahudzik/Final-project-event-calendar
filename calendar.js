@@ -7,8 +7,6 @@ $(function(){
   var monthLabel = $('.month');
   var allMonths = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
 
-console.log(prev,next,monthLabel, allMonths);
-
 
 //Funkcja sprawiajaca, ze po nacisnieciu w event wyskakuje formularz do rejestracji
   eventItem.on('click', function(){
@@ -91,40 +89,72 @@ console.log(prev,next,monthLabel, allMonths);
 
 //Wyszukiwanie eventow w gornej sekcji kalendarza
   var submitButton = $('.searchButton');
-
   var inputLocation = $('#location').val();
   var inputName = $('#name').val();
   var inputDate = $('#date').val();
   var events = $('.event');
   var eventDate = $('div.event[data-date]');
-
+  var monthLabel = $('#month_header');
+  var allMonths = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
 
   function search() {
     var inputDate = $('#date').val();
+    var inputLocation = $('#location').val();
+    var inputName = $('#name').val();
     var monthLabel = $('#month_header');
-    var allMonths = [April, May, June, July, August, September, October, November, December];
-    var date1 = $('[data-date="'+ inputDate + '"]');
-    var dateResult = $('<section class="searchResult">'+ '[data-date="'+ inputDate + '"]' +'</section>');
-    // var datesearchResult = $()
+    var allMonths = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
+    var dateResult = $('[data-date="'+ inputDate + '"]');
+    var countryResult = $('[data-country="'+ inputLocation + '"]');
+    var cityResult = $('[data-city="'+ inputLocation + '"]');
+    var nameResult = $('.event').filter(function(index) {
+           return inputName!=='' && $(this).data('name').toLowerCase().indexOf(inputName.toLowerCase()) >= 0;
+        });
+    var nameFinal = $('.event').data('name');
 
-
+//wyszukiwanie po dacie
     if ($('[data-date="'+ inputDate + '"]')) {
 
-      monthLabel.addClass("nonDisplay");
-      jQuery.each( allMonths, function( i, val ) {
-          allMonths[i].addClass("nonDisplay");
-      });
-
-      $('nav').append(date1);
-      date1.removeClass('EU').removeClass('event').removeAttr('id'); //trzeba pousuwac jeszcze inne klasy np. US
-      date1.addClass(searchResult);
+      $('nav').after(dateResult);
+      dateResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id'); //trzeba pousuwac jeszcze inne klasy np. US
+      dateResult.addClass('searchResult');
 
     } else {
-      console.log("nie wyszukalo");
+      console.log("No results");
     }
+
+
+//wyszukiwanie po lokalizacji
+    if (countryResult) {
+
+      $('nav').after(countryResult);
+      countryResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id');
+      countryResult.addClass('searchResult');
+    } else if (cityResult) {
+
+      $('nav').after(cityResult);
+      cityResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id');
+      cityResult.addClass('searchResult');
+    } else {
+      console.log("No results");
+    }
+
+//wyszukiwanie po nazwie
+    if (nameResult) {
+      $('nav').after(nameResult);
+      nameResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id');
+      nameResult.addClass('searchResult');
+    }
+
   }
 
   submitButton.on('click', function(){
+
+    monthLabel.addClass("nonDisplay");
+    var calendarBoard = $('.calendar');
+    jQuery.each(calendarBoard, function (i,val) {
+      $(this).addClass("nonDisplay");
+    });
+
     search();
   });
 

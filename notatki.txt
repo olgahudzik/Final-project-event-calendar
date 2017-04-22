@@ -1,0 +1,35 @@
+1. Search result ma byc na samej gorze i tylko raz
+
+- wycentrowanie buttona
+- czemu po zatwierdzeniu fromularza a wynikow wyszukiwania wszystko wraca do kalendarza (a nie do wynikow wyszukiwania)?
+
+
+
+
+        
+        
+        data-country='United States' data-city='Minneapolis' data-date='2017-06-07'
+
+
+na poczatku funckji remov wszyteki tr
+
+
+
+Co jest jeszcze do zrobienia?
+1. Wyszukiwanie:
+ - jezeli nie spelnia zadnych warunkow to ma sie wyswietlic 'No results' 
+ - walidacja pol czyli jezeli sa puste to preventDefault
+ - po zatwierdzeniu formularza z wynikow wyszukiwania, ma wrocic do wynikow wyszukiwania ( a wraca do kalendarza)
+
+2. Rejestracja na eventy:
+  - walidacja - narazie nie ma zadnej
+  - przesylanie danych (API)
+
+3. Wyglad kalendarza i responsywnosc:
+  - przeniesc wszystko do scssa
+  - dodac media queries  - wszystko ma byc responsywne (na 3 rozmiary urzadzen)
+  - dodac prefixy do roznych wyszukiwarek
+
+4. Interakcje na kalendarzu:
+  - wyczyscic i podpiac drugiego jsa
+  - naprawic to co nie dziala w przesuwaniu

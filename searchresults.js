@@ -1,11 +1,7 @@
 $(function(){
   //Wyszukiwanie eventow w gornej sekcji kalendarza
     var submitButton = $('.searchButton');
-    var inputLocation = $('#location').val();
-    var inputName = $('#name').val();
-    var inputDate = $('#date').val();
     var events = $('.event');
-    var eventDate = $('div.event[data-date]');
     var monthLabel = $('#month_header');
     var allMonths = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
 

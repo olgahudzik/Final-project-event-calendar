@@ -1,0 +1,104 @@
+$month_sections: "April", "May", "June", "July","August", "September", "October", "November", "December";
+
+.month, .right, .left {
+  display:inline-block;
+  font-size: 22px;
+  text-align: center;
+  padding: 0 10px;
+  cursor:pointer;
+}
+section#month_header {
+  display:flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.calendar {
+  display:flex;
+  flex-wrap:wrap;
+  align-content:center;
+  height:590px;
+  width:708px;
+  margin: 0 auto 50px auto;
+}
+.calendar {
+     > div {
+      position:relative;
+      width:100px;
+      height:100px;
+      border: 1px solid #ffffff;
+      box-sizing:border-box;
+    }
+}
+.week_day {
+  text-align: center;
+  margin:0 auto;
+  height:50px;
+  padding:0 20px;
+}
+.week_day {
+    span {
+    display:table-cell;
+    vertical-align:bottom;
+    height:inherit;
+    margin:0 auto;
+  }
+}
+.white {
+  background-color: #ffffff;
+  color:#393f4f;
+}
+.black {
+  background-color:#393f4f;
+  color: #ffffff;
+  text-align:right;
+  padding:5px;
+}
+.event {
+  position: absolute;
+  font-size:12px;
+  z-index: 1;
+  box-sizing: border-box;
+  padding:3px;
+  cursor:pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+.US {
+  background-color:#32bd32 ;
+}
+.US:hover {
+  background-color:#65d665;
+}
+.EU {
+  background-color: #ff8d00;
+}
+.EU:hover {
+  background-color:#ffa332;
+}
+.lower {
+  position:absolute;
+  bottom:20px;
+}
+.bottom {
+  position:absolute;
+  bottom:0;
+}
+.width1Day {
+  width:90%!important;
+}
+.width2Days {
+  width:190%!important;
+}
+.width3Days {
+  width:290%!important;
+}
+.width4Days {
+  width:290%!important;
+}
+.nonDisplay {
+  display: none!important;
+}
+.display {
+  display: block!important;
+}

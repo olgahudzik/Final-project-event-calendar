@@ -27,15 +27,15 @@ $(function(){
     });
 
   //Funkcja sluzaca przesuwaniu miesiecy kalendarza
-    var April = $('#calendarApril');
-    var May = $('#calendarMay');
-    var June = $('#calendarJune');
-    var July = $('#calendarJuly');
-    var August = $('#calendarAugust');
-    var September = $('#calendarSeptember');
-    var October = $('#calendarOctober');
-    var November = $('#calendarNovember');
-    var December = $('#calendarDecember');
+    var April = $('#April');
+    var May = $('#May');
+    var June = $('#June');
+    var July = $('#July');
+    var August = $('#August');
+    var September = $('#September');
+    var October = $('#October');
+    var November = $('#November');
+    var December = $('#December');
     i = 3;
     next.on('click', function(){
       i++;
@@ -84,78 +84,25 @@ $(function(){
         May.addClass("nonDisplay");
       } else if (allMonths[i]=="June") {
         June.removeClass("nonDisplay");
+        July.addClass("nonDisplay");
+      } else if (allMonths[i]=="July") {
+        July.removeClass("nonDisplay");
+        August.addClass("nonDisplay");
+      } else if (allMonths[i]=="August") {
+        August.removeClass("nonDisplay");
+        September.addClass("nonDisplay");
+      } else if (allMonths[i]=="September") {
+        September.removeClass("nonDisplay");
+        October.addClass("nonDisplay");
+      } else if (allMonths[i]=="October") {
+        October.removeClass("nonDisplay");
+        November.addClass("nonDisplay");
+      } else if (allMonths[i]=="November") {
+        November.removeClass("nonDisplay");
+        December.addClass("nonDisplay");
+      } else if (allMonths[i]=="December") {
+        December.removeClass("nonDisplay");
       }
     });
-
-//Wyszukiwanie eventow w gornej sekcji kalendarza
-  var submitButton = $('.searchButton');
-  var inputLocation = $('#location').val();
-  var inputName = $('#name').val();
-  var inputDate = $('#date').val();
-  var events = $('.event');
-  var eventDate = $('div.event[data-date]');
-  var monthLabel = $('#month_header');
-  var allMonths = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
-
-  function search() {
-    var inputDate = $('#date').val();
-    var inputLocation = $('#location').val();
-    var inputName = $('#name').val();
-    var monthLabel = $('#month_header');
-    var allMonths = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
-    var dateResult = $('[data-date="'+ inputDate + '"]');
-    var countryResult = $('[data-country="'+ inputLocation + '"]');
-    var cityResult = $('[data-city="'+ inputLocation + '"]');
-    var nameResult = $('.event').filter(function(index) {
-           return inputName!=='' && $(this).data('name').toLowerCase().indexOf(inputName.toLowerCase()) >= 0;
-        });
-    var nameFinal = $('.event').data('name');
-
-//wyszukiwanie po dacie
-    if ($('[data-date="'+ inputDate + '"]')) {
-
-      $('nav').after(dateResult);
-      dateResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id'); //trzeba pousuwac jeszcze inne klasy np. US
-      dateResult.addClass('searchResult');
-
-    } else {
-      console.log("No results");
-    }
-
-
-//wyszukiwanie po lokalizacji
-    if (countryResult) {
-
-      $('nav').after(countryResult);
-      countryResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id');
-      countryResult.addClass('searchResult');
-    } else if (cityResult) {
-
-      $('nav').after(cityResult);
-      cityResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id');
-      cityResult.addClass('searchResult');
-    } else {
-      console.log("No results");
-    }
-
-//wyszukiwanie po nazwie
-    if (nameResult) {
-      $('nav').after(nameResult);
-      nameResult.removeClass('EU').removeClass('event').removeClass('US').removeClass('lower').removeClass('bottom').removeAttr('id');
-      nameResult.addClass('searchResult');
-    }
-
-  }
-
-  submitButton.on('click', function(){
-
-    monthLabel.addClass("nonDisplay");
-    var calendarBoard = $('.calendar');
-    jQuery.each(calendarBoard, function (i,val) {
-      $(this).addClass("nonDisplay");
-    });
-
-    search();
-  });
 
 });

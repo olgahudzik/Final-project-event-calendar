@@ -31,5 +31,31 @@ Co jest jeszcze do zrobienia?
   - dodac prefixy do roznych wyszukiwarek
 
 4. Interakcje na kalendarzu:
-  - wyczyscic i podpiac drugiego jsa
-  - naprawic to co nie dziala w przesuwaniu
+  - funckja sluzaca do przesuwania kalendarza nie jest zapetlona(pytanie do Kuby)
+
+
+
+
+.width1Day {
+  width:90%;
+}
+.width2Days {
+  width:190%;
+}
+.width3Days {
+  width:290%;
+}
+.width4Days {
+  width:290%;
+}
+
+320 - 699
+700 - 1024
+1025 - 1360
+
+
+
+www.dot.tk - jedyne darmowe na swiecie domeny:
+wchodzimy na strone i sie logujemy (zakladamu konto) --> register new domain --> sprawdzamy dostepnosc domeny --> use DNS (use your own DNS) 
+--> tam wpisujemy name server: DNS11.LINUXPL, drugie nameserver: NS11.LINUXPL.COM (ma byc malymi literami)--> wybrac period (tak zeby byl darmowy)
+jak juz to podepniemy to dajemy znac Kubie i on  nas doda.

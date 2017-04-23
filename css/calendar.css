@@ -1,6 +1,8 @@
 body {
   font-family: 'Poppins', sans-serif!important;
   color: #393f4f;
+  margin: 0;
+	padding: 0;
 }
 nav.bar {
   background-color: #393f4f ;
@@ -36,15 +38,6 @@ nav.bar {
 label[for="date"] {
   padding-left:40px;
 }
-hr {
-  display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-    background-color:#ffffff;
-}
 .searchButton {
   background-color: #ffffff;
     color: #393f4f;
@@ -70,7 +63,7 @@ section#month_header {
   justify-content: center;
   height: 100px;
 }
-section#calendarApril{
+.calendar {
   display:flex;
   flex-wrap:wrap;
   align-content:center;
@@ -78,70 +71,12 @@ section#calendarApril{
   width:708px;
   margin: 0 auto 50px auto;
 }
-section#calendarMay{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
-
-}
-section#calendarJune{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
-}
-section#calendarJuly{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
-}
-section#calendarAugust{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
-}
-section#calendarSeptember{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
-}
-section#calendarOctober{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
-}
-section#calendarNovember{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
-}
-section#calendarDecember{
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  height:590px;
-  width:708px;
-  margin: 0 auto 50px auto;
+.calendar > div{
+  position:relative;
+  width:100px;
+  height:100px;
+  border: 1px solid #ffffff;
+  box-sizing:border-box;
 }
 .week_day {
   text-align: center;
@@ -155,69 +90,7 @@ section#calendarDecember{
   height:inherit;
   margin:0 auto;
 }
-section#calendarApril > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarMay > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarJune > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarJuly > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarAugust > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarSeptember > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarOctober > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarNovember > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
-section#calendarDecember > div{
-  position:relative;
-  width:100px;
-  height:100px;
-  border: 1px solid #ffffff;
-  box-sizing:border-box;
-}
+
 .white {
   background-color: #ffffff;
   color:#393f4f;
@@ -230,12 +103,14 @@ section#calendarDecember > div{
 }
 
 .event {
-  width:100%;
+  position: absolute;
   font-size:12px;
   z-index: 1;
   box-sizing: border-box;
   padding:3px;
   cursor:pointer;
+  margin: 0 auto;
+  text-align: center;
 }
 .US {
   background-color:#32bd32 ;
@@ -249,7 +124,19 @@ section#calendarDecember > div{
 .EU:hover {
   background-color:#ffa332;
 }
-#event_1 {
+.width1Day {
+  width:90%;
+}
+.width2Days {
+  width:190%;
+}
+.width3Days {
+  width:290%;
+}
+.width4Days {
+  width:290%;
+}
+/*#event_1 {
   position: absolute;
   width: 295%;
   z-index: 1;
@@ -367,7 +254,7 @@ section#calendarDecember > div{
   z-index: 1;
   margin: 0 auto;
   text-align: center;
-}
+}*/
 .fullScreen {
     position: fixed;
     width: 100%;
@@ -453,9 +340,6 @@ input.formSubmit:hover {
 .search label {
   font-size:18px;
 }
-/*input[type="email"] {
-  margin-left: 50px;
-}*/
 .searchButton {
   margin-right: 0;
   margin-left: 50px;
@@ -474,9 +358,7 @@ input.formSubmit:hover {
 .searchButton:focus {
   border: 2px solid #ffffff;
 }
-.registerForm label {
-  font-size: 18px;
-}
+
 .lower {
   position:absolute;
   bottom:20px;
@@ -516,7 +398,6 @@ h3 {
   text-align: center;
 }
 button.resultsButton {
-  /*margin: 0 80px;*/
   background-color:#ff8d00;
   color:#ffffff!important;
   font-weight:bold;

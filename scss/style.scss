@@ -1,0 +1,51 @@
+body {
+  font-family: 'Poppins', sans-serif!important;
+  color: #393f4f;
+}
+nav.bar {
+  background-color: #393f4f ;
+  padding-bottom:20px;
+  margin-bottom: 20px;
+}
+.headline {
+  font-size: 32px;
+  font-weight:bold;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
+  padding-bottom:20px;
+  padding-top:20px;
+}
+.search {
+  display:inline-flex;
+  color: #c0c0c0;
+  margin: 20px 150px;
+  padding:0;
+}
+.searchby {
+  font-weight:bold;
+  font-size:18px;
+  color:#ffffff;
+}
+.field {
+  border-right:none;
+  border-left:none;
+  border-top:none;
+  box-shadow: inset 0px 0px 0px 0px red;
+}
+label[for="date"] {
+  padding-left:40px;
+}
+.searchButton {
+  background-color: #ffffff;
+    color: #393f4f;
+    border: 2px solid #393f4f;
+    font-size:16px;
+    padding:10px 30px;
+    border-radius: 0%;
+}
+.searchButton:hover {
+  background-color: #c0c0c0;
+   color: #393f4f;
+   border: 2px solid #393f4f;
+}

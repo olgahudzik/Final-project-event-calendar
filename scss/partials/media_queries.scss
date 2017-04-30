@@ -20,6 +20,13 @@
   }
 }
 
+//dostosowanie rozmiaru kalendarza
+section#month_header {
+  width:100%;
+  margin:0 auto;
+  height:50px;
+}
+
 @media screen and (min-width: 601px) and (max-width: 949px) {
 //dostosowanie rozmiaru search panel
   div.headline {
@@ -76,7 +83,8 @@
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 950px) and (max-width: 1024px) {
+@media screen and (min-width: 950px) and (max-width: 1300px) {
+//dostosowanie rozmiaru search panel
   div.search {
     display:flex;
     flex-wrap:wrap;
@@ -87,22 +95,9 @@
   span.searchby {
     flex-basis:100%;
     padding:20px 0;
+    margin-right:20px;
+  }
+  label[for="date"] {
+    padding-left:0;
   }
 }
-// @media screen and (min-width: 700px) and (max-width: 1025px) {
-
-//dostosowanie rozmiaru search panel
-//  div.search {
-//    width:100%;
-//    margin: 0 10px;
-//  }
-//  span.searchby{
-//    display:none;
-//  }
-//  label{
-//    padding:0!important;
-//  }
-//  input.searchButton {
-//    margin-left:20px;
-//  }
-// }

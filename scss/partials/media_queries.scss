@@ -18,14 +18,55 @@
   input[type=submit] {
     margin-top:30px;
   }
-}
 
 //dostosowanie rozmiaru kalendarza
-section#month_header {
-  width:100%;
-  margin:0 auto;
-  height:50px;
+  section#month_header {
+    width:100%;
+    margin:0 auto;
+    height:50px;
+    font-size: 16px!important;
+  }
+  .calendar {
+    width:450px;
+    height:auto;
+  }
+  .calendar > div {
+    width:64px;
+    height:64px;
+    font-size:12px;
+  }
+  .week_day {
+    padding: 0 5px;
+  }
+  .week_day:first-child::after {
+    content: 'Mon';
+  }
+  .week_day:nth-child(2)::after {
+    content: 'Tue';
+  }
+  .week_day:nth-child(3)::after {
+    content: 'Wed';
+  }
+  .week_day:nth-child(4)::after {
+    content: 'Thu';
+  }
+  .week_day:nth-child(5)::after {
+    content: 'Fri';
+  }
+  .week_day:nth-child(6)::after {
+    content: 'Sat';
+  }
+  .week_day:nth-child(7)::after {
+    content: 'Sun';
+  }
+  .week_day span {
+    display:none;
+  }
+  .event {
+    font-size:10px;
+  }
 }
+
 
 @media screen and (min-width: 601px) and (max-width: 949px) {
 //dostosowanie rozmiaru search panel
@@ -83,6 +124,27 @@ section#month_header {
     margin-top: 20px;
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 750px) {
+//dostosowanie rozmiaru kalendarza
+  section#month_header {
+    width:100%;
+    margin:0 auto;
+    height:50px;
+    font-size: 16px!important;
+  }
+  .calendar {
+    width:600px;
+    height:auto;
+  }
+  .calendar > div {
+    width:85px;
+    height:85px;
+    font-size:12px;
+  }
+}
+
+
 @media screen and (min-width: 950px) and (max-width: 1300px) {
 //dostosowanie rozmiaru search panel
   div.search {

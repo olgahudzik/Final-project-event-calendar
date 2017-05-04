@@ -76,9 +76,21 @@ section#month_header {
 .EU:hover {
   background-color:#ffa332;
 }
+.APAC {
+  background-color: #8B1A89;
+}
+.APAC:hover {
+  background-color: #ad5eac;
+}
+.AU {
+  background-color: #0080FF;
+}
+.AU:hover {
+  background-color: #4ca6ff;
+}
 .lower {
   position:absolute;
-  bottom:20px;
+  bottom:23px;
 }
 .bottom {
   position:absolute;
@@ -94,7 +106,10 @@ section#month_header {
   width:290%!important;
 }
 .width4Days {
-  width:290%!important;
+  width:390%!important;
+}
+.width5Days {
+  width:490%!important;
 }
 .nonDisplay {
   display: none!important;

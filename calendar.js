@@ -10,8 +10,9 @@ $(function(){
 
 //Funkcja sprawiajaca, ze po nacisnieciu w event wyskakuje formularz do rejestracji
   eventItem.on('click', function(){
-
-      var newDiv = $("<div class='newDiv'><form class='registerForm'><h1 class='formHeadline'>Express Your Interest!</h1><center>Fill in the form below to express you interest in this event. You will be automatically added to its standby list.</center><br><div class='inputsGroup'><label>First Name</label><input type='text'><br><label>Last Name</label><input type='text'><br><label>Email</label><input type='email'><br><input type='submit' value='Count me in' class='formSubmit'><div></form><br><br><button class='close'>X Close</button></div>");
+      var eventName = $(this).data('name');
+      var eventLink = $(this).data('url');
+      var newDiv = $("<div class='newDiv'><form class='registerForm'><h1 class='green'>Express Your Interest!</h1><br><br><center>Fill in the form below to express you interest in the <b>" + eventName +"</b>. You will be automatically added to its standby list.</center><div class='inputsGroup'><label>First Name</label><input type='text'><br><label>Last Name</label><input type='text'><br><label>Email</label><input type='email'><br><input type='submit' value='Count me in' class='formSubmit'><div></form><br><br><center><a href='" + eventLink +"' target='_blank' class='green'><b>Click Here</b></a> to be redirected<br> to the event website.</center><br><br><button class='close'>X Close</button></div>");
 
       body.append(newDiv);
       newDiv.addClass("fullScreen");

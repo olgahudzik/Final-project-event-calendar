@@ -59,3 +59,21 @@ www.dot.tk - jedyne darmowe na swiecie domeny:
 wchodzimy na strone i sie logujemy (zakladamu konto) --> register new domain --> sprawdzamy dostepnosc domeny --> use DNS (use your own DNS) 
 --> tam wpisujemy name server: DNS11.LINUXPL, drugie nameserver: NS11.LINUXPL.COM (ma byc malymi literami)--> wybrac period (tak zeby byl darmowy)
 jak juz to podepniemy to dajemy znac Kubie i on  nas doda.
+
+
+
+$.post('index.php', {
+
+title: 'Ex Machina',
+
+seans: '1 marzec, godz. 18:00'
+
+}) .done(function(response){
+
+console.log(response);
+
+}).fail(function(error){
+
+console.log(error);
+
+});

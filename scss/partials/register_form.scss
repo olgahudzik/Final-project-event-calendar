@@ -37,7 +37,7 @@ h1 {
 }
 .registerForm {
   width:500px;
-  height: 500px;
+  height: 600px;
   border:1px solid #eeeeee;
   background-color: #ffffff;
   padding:30px;
@@ -59,7 +59,7 @@ h1 {
   }
 }
 input.formSubmit {
-  margin: 20px 50px;
+  margin: 20px 20px 20px 83px;
   background-color: #393f4f;
   color:#ffffff;
   padding:10px;
@@ -68,7 +68,23 @@ input.formSubmit {
 }
 input.formSubmit:hover {
   background-color: #ffffff;
-  color:#393f4f;
+  color:#32bd32;
   padding:10px;
-  border:1px solid #393f4f;
+  border:1px solid #32bd32;
+}
+.green {
+  color:#32bd32;
+  text-decoration: none;
+}
+a.green:hover {
+  color:#32bd32;
+  text-decoration: underline;
+}
+a.green:visited {
+  color:#32bd32;
+  text-decoration: none;
+}
+a.green:active {
+  color:#32bd32;
+  text-decoration: none;
 }

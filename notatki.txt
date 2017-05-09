@@ -77,3 +77,12 @@ console.log(response);
 console.log(error);
 
 });
+
+
+Co jeszcze do zrobienia?
+1. Ajax w formularzu rejestracji
+2. Walidacja w formularzu rejestracji
+3. tresc dynamiczna (nazwa eventu i link) przy otwieraniu formularza a tabeli wyszukiwania
+4. wyswietlanie 'Brak wynikow' jezeli kryteria nie sa spelnione
+5. Dodanie legendy do kalendarza
+4. 

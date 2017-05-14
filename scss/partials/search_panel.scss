@@ -15,11 +15,13 @@ nav.bar {
   color: #ffffff;
   padding-bottom:20px;
   padding-top:20px;
+
 }
 .search {
+  // width:100%;
   display:inline-flex;
   color: #c0c0c0;
-  margin: 20px 150px;
+  margin: 20px 35px 20px 105px;
   padding:0;
 }
 .search {
@@ -52,6 +54,22 @@ nav.bar {
 label[for="date"] {
   padding-left:40px;
 }
+.add {
+  background-color: #32bd32;
+    color: #393f4f;
+    border: 1px solid #393f4f;
+    font-size:16px;
+    width:150px;
+    padding: 10px 6px;
+    border-radius: 0%;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.add:hover {
+  background-color: #393f4f;
+   color: #32bd32;
+   border: 1px solid #32bd32;
+}
 .searchButton {
   background-color: #ffffff;
     color: #393f4f;
@@ -67,7 +85,7 @@ label[for="date"] {
 }
 .searchButton {
   margin-right: 0;
-  margin-left: 50px;
+  margin-left: 30px;
   background-color: #ffffff;
   color: #393f4f;
   border: 2px solid #ffffff;
@@ -78,7 +96,7 @@ label[for="date"] {
 .searchButton:hover {
   background-color: #393f4f;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
 }
 .searchButton:focus {
   border: 2px solid #ffffff;

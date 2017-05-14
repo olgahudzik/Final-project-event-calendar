@@ -27,29 +27,64 @@ $(function(){
 
     });
 
+
+// funkcja wyświetlająca komunikat potwierdzenia
+  function formConfirmation() {
+
+     $('body').find('.newDiv').empty();
+     $('body').find('.newDiv').append('<div class="formConfirmation">Thank you, your information has been confirmed.<br> You are added to the event standby list.</div>');
+     $('body').find('.formConfirmation').fadeOut(4000, function(){
+       $('body').find('.newDiv').removeClass('formConfirmation').removeClass('fullScreen');
+     });
+
+  }
+
+
 // Walidacja formularza do rejestracji i wysyłanie danych
   function validate(e) {
-    var registerFirstName = $('#firstName').val();
-    var registerLastName = $('#lastName').val();
-    var registerEmail = $('#formEmail').val();
+    var registerFirstName = $('body').find('#firstName').val();
+    var registerLastName = $('body').find('#lastName').val();
+    var registerEmail = $('body').find('#formEmail').val();
+    var valid = true;
+    //console.log(registerEmail)
 
     if(registerFirstName.length < 1)  {
-      e.preventDefault();
-      $('#firstName').append('<span class="error">This field is required.</span>');
-    } else if (registerLastName.length < 1) {
-      e.preventDefault();
-      $('#lastName').append('<span class="error">This field is required.</span>');
-    } else if (email.length < 4 || email.not(contains("@"))) {
-      e.preventDefault();
-      $('formEmail').append('<span class="error">This field needs to contain at least 5 characters and @</span>')
+      $('#firstName').after('<span class="error"><br>This field is required.</span>');
+      valid = false;
+    }
+
+    if (registerLastName.length < 1) {
+      $('#lastName').after('<span class="error"><br>This field is required.</span>');
+      valid = false;
+    }
+
+    if (registerEmail.length < 4 || registerEmail.indexOf("@") === -1) {
+      $('#formEmail').after('<span class="error"><br>This field needs to contain at least 5 characters and "@"</span>');
+      valid = false;
    }
+   if (valid) {
+     var books = app.database().ref('books');
+       books.push("PHP5");
+
+       var commentsBooks = app.database().ref('comments/books');
+       commentsBooks.push({
+         first_name: registerFirstName,
+         last_name: registerLastName,
+         email: registerEmail,
+       });
+
+       formConfirmation();
+   }
+   return valid
+
+
 }
 
-// wywołanie walidacji
-var formSubmit = $('.formSubmit');
-
-  formSubmit.on('click', function() {
-    validate();
+// wywołanie walidacji i przesyłanie danych
+$( document ).on( "click", ".formSubmit", function(e) {
+    console.log("kalendarz");
+    e.preventDefault();
+    validate(e)
   });
 
 
@@ -133,4 +168,11 @@ var formSubmit = $('.formSubmit');
       }
     });
 
+
+// konfiguracja zewnetrznej bazy danych firebase
+var config = {
+    apiKey: "AIzaSyC6gzX_vI0TuncvSL7GzPxePlYMF2Hy8Ec",
+    databaseURL: "https://digital-marketing-calend-c5a5e.firebaseio.com",
+};
+var app = firebase.initializeApp(config);
 });

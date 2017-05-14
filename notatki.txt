@@ -85,4 +85,7 @@ Co jeszcze do zrobienia?
 3. tresc dynamiczna (nazwa eventu i link) przy otwieraniu formularza a tabeli wyszukiwania
 4. wyswietlanie 'Brak wynikow' jezeli kryteria nie sa spelnione
 5. Dodanie legendy do kalendarza
-4. 
+6. Dowiedziec sie jak zrobic kalendarz bez wklepywania danych do HTMLa
+7. Dodawanie nowych eventow
+
+

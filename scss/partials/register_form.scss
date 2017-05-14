@@ -43,6 +43,17 @@ h1 {
   padding:30px;
   color: #909090;
 }
+.formConfirmation {
+  width:300px;
+  height: 300px;
+  border:1px solid #eeeeee;
+  background-color: #ffffff;
+  padding:100px 30px;
+  color:#32bd32;
+  text-align: center;
+  font-weight:bold;
+  font-size:16px;
+}
 .registerForm {
   input {
     margin:10px;
@@ -87,4 +98,13 @@ a.green:visited {
 a.green:active {
   color:#32bd32;
   text-decoration: none;
+}
+.error {
+  color:red;
+  font-size:10px;
+  margin: 0;
+  padding: 0;
+}
+.red {
+  color:red!important;
 }

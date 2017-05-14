@@ -9,9 +9,9 @@
 </head>
 <body>
   <nav class="bar">
-    <div class="headline">
-      DIGITAL MARKETING EVENTS CALENDAR
-    </div>
+      <div class="headline">
+        DIGITAL MARKETING EVENTS CALENDAR 2017
+      </div>
     <div class="search">
       <span class="searchby">Search by</span>
       <label for="date">Date:</label>
@@ -21,6 +21,7 @@
       <label for="name">Name:</label>
       <input type="text" class="field" id="name">
       <input type="submit" class="searchButton" value="Search Now"></input>
+      <button class="add">+ Add New Event</button>
     </div>
     </div>
   </nav>
@@ -709,9 +710,13 @@
       </tr>
     </table>
   </section>
+
   <script src="jquery-3.1.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="calendar.js"></script>
   <script src="searchresults.js"></script>
+  <script src="add_event.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-database.js"></script>
 </body>
 </html>
